@@ -11,6 +11,7 @@
 		1B290B5F23467212004C40FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B290B5D23467212004C40FC /* Main.storyboard */; };
 		1B290B6123467213004C40FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B290B6023467213004C40FC /* Assets.xcassets */; };
 		1B290B6423467213004C40FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B290B6223467213004C40FC /* LaunchScreen.storyboard */; };
+		1B290B7223467625004C40FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B290B7123467625004C40FC /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1B290B6023467213004C40FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B290B6323467213004C40FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B290B6523467213004C40FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B290B7123467625004C40FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		1B290B4D23467212004C40FC = {
 			isa = PBXGroup;
 			children = (
+				1B290B7123467625004C40FC /* Default-568h@2x.png */,
 				1B290B5823467212004C40FC /* MovieSearch */,
 				1B290B5723467212004C40FC /* Products */,
 			);
@@ -52,10 +55,10 @@
 		1B290B5823467212004C40FC /* MovieSearch */ = {
 			isa = PBXGroup;
 			children = (
+				1B290B6C2346727C004C40FC /* Storyboard */,
 				1B290B6F23467295004C40FC /* View Controller */,
 				1B290B6E23467289004C40FC /* Model Controller */,
 				1B290B6D23467283004C40FC /* Model */,
-				1B290B6C2346727C004C40FC /* Storyboard */,
 				1B290B6B23467274004C40FC /* Resources */,
 			);
 			path = MovieSearch;
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B290B6423467213004C40FC /* LaunchScreen.storyboard in Resources */,
+				1B290B7223467625004C40FC /* Default-568h@2x.png in Resources */,
 				1B290B6123467213004C40FC /* Assets.xcassets in Resources */,
 				1B290B5F23467212004C40FC /* Main.storyboard in Resources */,
 			);
