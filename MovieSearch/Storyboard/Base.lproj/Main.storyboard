@@ -71,6 +71,12 @@
                                         <constraint firstItem="maH-37-l5b" firstAttribute="top" secondItem="aeD-6t-R1c" secondAttribute="top" id="osJ-4M-dlj"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieImageView" destination="aeD-6t-R1c" id="ydg-sj-9TG"/>
+                                    <outlet property="movieSummaryTextView" destination="WRH-Jc-nWk" id="GjX-B4-iRT"/>
+                                    <outlet property="ratingOfMovieLabel" destination="3JF-LH-a3N" id="2bu-sW-MBp"/>
+                                    <outlet property="titleOfMovieLabel" destination="Qgg-xI-iXy" id="1Di-7a-Vdm"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -78,6 +84,9 @@
                             <outlet property="delegate" destination="CZF-YO-jgl" id="XWW-kd-Xar"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="searchBar" destination="VBs-VB-iVF" id="Pmb-uc-EFP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="am2-h7-1tR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

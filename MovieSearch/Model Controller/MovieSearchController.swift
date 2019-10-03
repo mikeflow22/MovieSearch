@@ -78,28 +78,28 @@ class MovieSearchController {
                 completion()
                 return
             }
-        }.resume()
-        
-        func fetchPoster(with movie: String, completion: @escaping(UIImage?) -> Void){
-            let movieImageUrl = NamingKeys.MovieaseURL + movie
-            guard let url = URL(string: movieImageUrl) else {print("Error with movieImageUrl"); completion(nil) ; return}
-            
-            URLSession.shared.dataTask(with: url) { (data, _, error) in
-                if let error = error {
-                    print("Error with poster: \(error), READABLE ERROR:::\(error.localizedDescription), \(#function)")
-                    completion(nil)
-                    return
-                }
-                
-                guard let data = data else {
-                    print("Error unwerapping data for image")
-                    completion(nil)
-                    return
-                }
-                
-                let image = UIImage(data: data)
-                completion(image)
             }.resume()
-        }
+    }
+    
+    func fetchPoster(withMovie movie: String, completion: @escaping(UIImage?) -> Void){
+        let movieImageUrl = NamingKeys.MovieaseURL + movie
+        guard let url = URL(string: movieImageUrl) else {print("Error with movieImageUrl"); completion(nil) ; return}
+        
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
+            if let error = error {
+                print("Error with poster: \(error), READABLE ERROR:::\(error.localizedDescription), \(#function)")
+                completion(nil)
+                return
+            }
+            
+            guard let data = data else {
+                print("Error unwerapping data for image")
+                completion(nil)
+                return
+            }
+            
+            let image = UIImage(data: data)
+            completion(image)
+            }.resume()
     }
 }
