@@ -15,9 +15,9 @@ struct MovieSearch: Codable {
 
 struct Movie: Codable {
     let title: String
-    let rating: String
+    let rating: Double
     let summary: String
-    let poster: String
+    let poster: String?
     
     enum CodingKeys: String, CodingKey {
         case title

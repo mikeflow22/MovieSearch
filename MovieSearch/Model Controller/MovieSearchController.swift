@@ -32,10 +32,15 @@ class MovieSearchController {
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         
         //create a dictionary of the query items
-        let urlParameters = ["api_Key" : NamingKeys.apiKey, NamingKeys.querykey : searchTerm.lowercased()]
+//        let urlParameters = ["api_key" : NamingKeys.apiKey, NamingKeys.querykey : searchTerm.lowercased()]
+        let apiQueryItem = URLQueryItem(name: "api_key", value: NamingKeys.apiKey)
+        let queryKey = URLQueryItem(name: NamingKeys.querykey, value: searchTerm.lowercased())
+        
         
         //use compactMap to iterate through the query item dictionary and initialize query items with the keys and values
-        var queryItems = urlParameters.compactMap { URLQueryItem(name: $0.key, value: $0.value) }
+//        let queryItems = urlParameters.compactMap { URLQueryItem(name: $0.key, value: $0.value) }
+        
+        let queryItems = [apiQueryItem, queryKey]
         
         //assign the query items to urlComponents
         urlComponents?.queryItems = queryItems
@@ -102,4 +107,10 @@ class MovieSearchController {
             completion(image)
             }.resume()
     }
+    /*
+     guard let url = URL(string: movieImageUrl) else {print("Error with movieImageUrl"); completion(nil) ; return}
+     let finalURL = url.appendingPathComponent(movie.poster)
+     print("finalurl for movie: \(finalURL)")
+     
+ */
 }
