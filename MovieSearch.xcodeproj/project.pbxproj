@@ -15,6 +15,7 @@
 		1B290B7423467647004C40FC /* MovieCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B290B7323467647004C40FC /* MovieCellTableViewCell.swift */; };
 		1B290B762346765B004C40FC /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B290B752346765B004C40FC /* MovieListTableViewController.swift */; };
 		1B290B7823467752004C40FC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B290B7723467752004C40FC /* Movie.swift */; };
+		1B290B7A23467902004C40FC /* MovieSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B290B7923467902004C40FC /* MovieSearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1B290B7323467647004C40FC /* MovieCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellTableViewCell.swift; sourceTree = "<group>"; };
 		1B290B752346765B004C40FC /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
 		1B290B7723467752004C40FC /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1B290B7923467902004C40FC /* MovieSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		1B290B6E23467289004C40FC /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B290B7923467902004C40FC /* MovieSearchController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				1B290B762346765B004C40FC /* MovieListTableViewController.swift in Sources */,
 				1B290B7423467647004C40FC /* MovieCellTableViewCell.swift in Sources */,
+				1B290B7A23467902004C40FC /* MovieSearchController.swift in Sources */,
 				1B290B7823467752004C40FC /* Movie.swift in Sources */,
 				1B290B5A23467212004C40FC /* AppDelegate.swift in Sources */,
 			);
