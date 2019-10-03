@@ -10,15 +10,35 @@ import UIKit
 
 class MovieCellTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    //MARK: - Properties
+    
+    var movie: Movie? {
+        didSet{
+            updateViews()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    var poster: UIImage? {
+        didSet{
+            updateViews()
+        }
     }
+    
+    //MARK: - IBOutlets
+    @IBOutlet weak var movieImageView: UIImageView!
+    @IBOutlet weak var titleOfMovieLabel: UILabel!
+    @IBOutlet weak var ratingOfMovieLabel: UILabel!
+    @IBOutlet weak var movieSummaryTextView: UITextView!
+    
+    //MARK: - Functions
+    func updateViews(){
+        guard let movie = movie else {return}
+        titleOfMovieLabel.text = movie.title
+        ratingOfMovieLabel.text = "\(movie.rating)"
+        movieSummaryTextView.text = movie.summary
+        
+        guard let poster = poster else {return}
+        movieImageView.image = poster
+    }
+    
 
 }
